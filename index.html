@@ -20,5 +20,19 @@ body {
 <div class="maincont">
     <iframe frameborder="0" src="https://indd.adobe.com/view/1e7f4be5-1d0a-4106-87e2-df9cb9e326f0?coep=credentialless&corp=cross-origin&" sandbox="allow-scripts allow-same-origin">
 </div>
+
+<script>
+    function detectmob() {
+   if(window.innerWidth <= 800 || window.innerHeight <= 600) {
+     return true;
+   } else {
+     return false;
+   }
+}
+
+if (detectmob()){
+top.location.href="google.com";
+}
+    </script>  
 </body>
 </html>
