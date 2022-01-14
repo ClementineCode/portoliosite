@@ -21,9 +21,11 @@ body {
 </div>
 
 <script type="text/javascript">
-    if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/Android/i))) {
-      location.replace("http://w3docs.com");
-    }
+window.addEventListener('resize', function() {
+	if (window.innerWidth <= 600) {
+		window.location.href = "http://www.google.com"; 
+	}
+});
   </script> 
 </body>
 </html>
